@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="aubo_i5">
+
+
+  <!-- gantry -->
+  <xacro:include filename="$(find aubo_gazebo)/urdf/gantry.xacro"/>
+  <!-- aubo i5 -->
+  <xacro:include filename="$(find aubo_gazebo)/urdf/aubo_i5.xacro" />
+
+
+ <!-- /////////////////////////////////   world   ////////////////////////////////////// -->
+  <link name="world" />
+
+  <joint name="world_joint" type="fixed">
+    <parent link="world" />
+    <child link ="axis2" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint> -->
+
+
+  <joint name="attachment_joint" type="fixed">
+      <parent link="axis3" />
+      <child link="base_link" />
+      <origin xyz="0.243 0.14 -1.222" rpy="0 0.0 0" />
+  </joint>
+
+</robot>

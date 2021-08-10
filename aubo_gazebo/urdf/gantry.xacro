@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="gantry">
+  <link
+    name="room">
+    <inertial>
+      <origin
+        xyz="4.18825944227139 0.00311131656112593 1.41015415199359"
+        rpy="0 0 0" />
+      <mass
+        value="719.183678876683" />
+      <inertia
+        ixx="758.993538389474"
+        ixy="4.48123193280921E-06"
+        ixz="-0.332582305836725"
+        iyy="1454.98114397688"
+        iyz="-1.46756667565485E-05"
+        izz="1493.48674065897" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aubo_description/meshes/base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aubo_description/meshes/base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="axis_x">
+    <inertial>
+      <origin
+        xyz="0.222053559719226 2.21976980005625 0.0206368753509669"
+        rpy="0 0 0" />
+      <mass
+        value="56.2326042415849" />
+      <inertia
+        ixx="73.7031163614978"
+        ixy="-2.18843580735883E-05"
+        ixz="-5.54873479813806E-08"
+        iyy="0.33486100143943"
+        iyz="-0.000159124005640953"
+        izz="73.9991495636087" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aubo_description/meshes/collision/axis2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aubo_description/meshes/collision/axis2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="axis_x"
+    type="prismatic">
+    <origin
+      xyz="0.1 -2.2018 2.737"
+      rpy="0 0 0" />
+    <parent
+      link="room" />
+    <child
+      link="axis_x" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="axis_y">
+    <inertial>
+      <origin
+        xyz="0.252334066113213 0.151053199816647 -0.349428411677738"
+        rpy="0 0 0" />
+      <mass
+        value="16.6709368659665" />
+      <inertia
+        ixx="0.599152753172435"
+        ixy="8.8006748130009E-06"
+        ixz="-1.4331541654046E-05"
+        iyy="0.66107899459389"
+        iyz="0.0241357654191262"
+        izz="0.228076435879756" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aubo_description/meshes/collision/axis3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aubo_description/meshes/collision/axis3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="axis_y"
+    type="prismatic">
+    <origin
+      xyz="-0.0305 0.2505 0.137"
+      rpy="0 0 0" />
+    <parent
+      link="axis_x" />
+    <child
+      link="axis_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+</xacro:macro>
+</robot>
