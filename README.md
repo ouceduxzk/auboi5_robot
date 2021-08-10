@@ -42,9 +42,9 @@ roslaunch aubo_i5_moveit_config moveit_planning_execution.launch sim:=false robo
 
 ### Demos and videos 
 
-![Real Robot Control](https://www.robots.ch/img/AUBO-i5.jpg width="50%" height="50%")(https://www.youtube.com/watch?v=G6jAK9aeGHo&list=PLgLUD9HvNvmeXefMBWNDqegE-5NEDRRUW&index=2)
+![Real Robot Control](https://cdn.gibsonengineering.com/media/pictures/brands/brands-page/aubo/i5.jpg)(https://www.youtube.com/watch?v=G6jAK9aeGHo&list=PLgLUD9HvNvmeXefMBWNDqegE-5NEDRRUW&index=2)
 
-![Simulation](https://www.robots.ch/img/AUBO-i5.jpg width="50%" height="50%")(https://www.youtube.com/watch?v=nDT-fYFRygk&list=PLgLUD9HvNvmeXefMBWNDqegE-5NEDRRUW)
+![Simulation](https://cdn.gibsonengineering.com/media/pictures/brands/brands-page/aubo/i5.jpg)(https://www.youtube.com/watch?v=nDT-fYFRygk&list=PLgLUD9HvNvmeXefMBWNDqegE-5NEDRRUW)
 
 
 
