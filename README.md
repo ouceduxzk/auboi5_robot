@@ -42,9 +42,9 @@ roslaunch aubo_i5_moveit_config moveit_planning_execution.launch sim:=false robo
 
 ### Demos and videos 
 
-![](real.mp4)
+[![Real Robot]](real.mp4)
 
-![](simulation.mp4)
+[![Simulation]](simulation.mp4)
 
 
 
