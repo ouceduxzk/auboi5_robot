@@ -43,7 +43,7 @@ roslaunch aubo_i5_moveit_config moveit_planning_execution.launch sim:=false robo
 ### Demos and videos
 
 
-[![Real Robot Control]](https://www.youtube.com/watch?v=G6jAK9aeGHo&list=PLgLUD9HvNvmeXefMBWNDqegE-5NEDRRUW&index=2)
+[![Real Robot Control]](https://www.youtube.com/watch?v=G6jAK9aeGHo)
 
 [![Simulation]](https://www.youtube.com/watch?v=nDT-fYFRygk&list=PLgLUD9HvNvmeXefMBWNDqegE-5NEDRRUW)
 
